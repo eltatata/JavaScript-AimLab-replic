@@ -1,0 +1,88 @@
+/* ESTILOS GENERALES */
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.container-game {
+    color: white;
+}
+/* ---------------------------------------------------------------------------------------- */
+/* ESTILOS DEL JUEGO */
+
+.container-counters {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.explanation-game {
+    max-width: 300px;
+    min-width: 100px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+
+.end-msg {
+    color: red; 
+}
+/* ---------------------------------------------------------------------------------------- */
+/* ESTILOS DEL MODAL */
+
+.container-modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(118, 118, 118, .95);
+    z-index: 1000;
+    animation: 1s Appear forwards;
+    /* animation: 1s Disappear forwards; */
+}
+
+#modal {
+    margin: 10px;
+    padding: 50px;
+    border: 3px solid black;
+    background-color: rgb(57, 57, 57);
+}
+
+#modal h2 {
+    margin: 50px;
+}
+
+#close {
+    width: 60px;
+    height: 50px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes Appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Disappear {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+} 
