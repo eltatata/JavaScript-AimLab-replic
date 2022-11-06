@@ -1,6 +1,8 @@
 /* ESTILOS GENERALES */
 * {
     font-family: 'Oswald', sans-serif;
+    cursor: crosshair;
+    user-select: none;
 }
 
 body {
@@ -12,6 +14,22 @@ body {
 }
 /* ---------------------------------------------------------------------------------------- */
 /* ESTILOS DEL JUEGO */
+
+#objective {
+    position: absolute;
+    right: 50%;
+    top: 600px;
+    color: white;
+    font-size: 40px;
+    background: rgb(0, 106, 255);
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
 
 .container-counters {
     display: flex;
@@ -25,7 +43,6 @@ body {
     margin: auto;
     padding-top: 100px;
 }
-
 
 .end-msg {
     color: red; 
